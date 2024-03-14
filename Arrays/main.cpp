@@ -1,4 +1,4 @@
-//Arrays
+ï»¿//Arrays
 #include<iostream>
 using namespace std;
 using std::cout;
@@ -33,7 +33,7 @@ void main()
 	
 	for (int i = 0; i < SIZE; i++)
 	{
-		cout << "Ââåäèòå ýëåìåíò ìàññèâà:"; cin >> arr[i];
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¼Ð°ÑÑÐ¸Ð²Ð°:"; cin >> arr[i];
 	}
 	cout << endl;
 #endif // ARRAY_1
@@ -51,7 +51,7 @@ void main()
 	for (int i = 0; i < SIZE; i++)
 	{
 		sum += arr[i];
-		cout << "Ñóììà ýëåìåíòîâ ìàññèâà:" << sum << endl;
+		cout << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°:" << sum << endl;
 	}
 #endif // ARRAY_4
 
@@ -65,8 +65,8 @@ void main()
 		if (max < arr[i])
 			max = arr[i];
 	}
-	cout << "Ìèíèìàëüíîå çíà÷åíèå:" << min << endl;
-	cout << "Ìàêñèìàëüíîå çíà÷åíèå:" << max << endl;
+	cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ:" << min << endl;
+	cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ:" << max << endl;
 #endif // ARRAY_6
 
 }
