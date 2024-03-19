@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 #define tab "\t"
@@ -7,21 +7,21 @@ void main()
 {
 	setlocale(LC_ALL, "");
 	cout << double() << endl;
-	//int() - çíà÷åíèå ïî óìîë÷àíèþ äëÿ òèïà 'int'
-	//int() - çíà÷åíèå ïî óìîë÷àíèþ äëÿ òèïà 'double'
+	//int() - Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ Ð´Ð»Ñ Ñ‚Ð¸Ð¿Ð° 'int'
+	//int() - Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ Ð´Ð»Ñ Ñ‚Ð¸Ð¿Ð° 'double'
 	const int n = 10;
 	int arr[n] = { 0, 1, 1, 2, 3, 5, 8, 13, 21, 34 };
 	
-	//Âûâîä èñõîäíîãî ìàññèâà íà ýêðàí:
+	//Ð’Ñ‹Ð²Ð¾Ð´ Ð¸ÑÑ…Ð¾Ð´Ð½Ð¾Ð³Ð¾ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð½Ð° ÑÐºÑ€Ð°Ð½:
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << tab;
 	}
 	cout << endl;
 
-	//Ñäâèã ìàññèâà
+	//Ð¡Ð´Ð²Ð¸Ð³ Ð¼Ð°ÑÑÐ¸Ð²Ð°
 	int number_of_shifts;
-	cout << "Ââåäèòå êîëè÷åñòâî ñäâèãîâ:"; cin >> number_of_shifts;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ´Ð²Ð¸Ð³Ð¾Ð²:"; cin >> number_of_shifts;
 	for (int i = 0; i < number_of_shifts; i++)
 	{
 		int buffer = arr[0];
@@ -32,7 +32,7 @@ void main()
 		arr[n - 1] = buffer;
 	}
 
-	//Âûâîä ñäâèíóòîãî ìàññèâà íà ýêðàí:
+	//Ð’Ñ‹Ð²Ð¾Ð´ ÑÐ´Ð²Ð¸Ð½ÑƒÑ‚Ð¾Ð³Ð¾ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð½Ð° ÑÐºÑ€Ð°Ð½:
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << tab;
