@@ -2,6 +2,8 @@
 using namespace std;
 
 #define tab "\t"
+//#define SHIFT_LEFT
+//#define SHIFT_RIGHT
 
 void main()
 {
@@ -22,6 +24,8 @@ void main()
 	//Сдвиг массива
 	int number_of_shifts;
 	cout << "Введите количество сдвигов:"; cin >> number_of_shifts;
+
+#ifdef SHIFT_LEFT
 	for (int i = 0; i < number_of_shifts; i++)
 	{
 		int buffer = arr[0];
@@ -31,7 +35,20 @@ void main()
 		}
 		arr[n - 1] = buffer;
 	}
-
+#endif // SHIFT_LEFT
+	
+#ifdef SHIFT_RIGHT
+	for (int i = 0; i < n - number_of_shifts; i++)
+	{
+		int buffer = arr[0];
+		for (int i = 0; i < n - 1; i++)
+		{
+			arr[i] = arr[i + 1];
+		}
+		arr[n - 1] = buffer;
+	}
+#endif // SHIFT_RIGHT
+	
 	//Вывод сдвинутого массива на экран:
 	for (int i = 0; i < n; i++)
 	{
