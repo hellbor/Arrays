@@ -1,11 +1,11 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 void main()
 {
 	setlocale(LC_ALL, "");
 	int decimal;
-	cout << "Ââåäèòå äåñÿòè÷íîå ÷èñëî:"; cin >> decimal;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´ÐµÑÑÑ‚Ð¸Ñ‡Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾:"; cin >> decimal;
 	const int MAX_CAPACITY = 32;
 	bool binary[MAX_CAPACITY]{};
 	int i = 0;
