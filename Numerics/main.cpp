@@ -43,11 +43,14 @@ void main()
 	for (; decimal; i++)
 	{
 		hex[i] = decimal % 16;	//получаем младший шестнадцатиричный разряд и сохраняем его
+		hex[i] += hex[i] < 10 ? 48 : 55;
 		decimal /= 16;		//убираем младший шестнадцатиричный разряд из десятичного числа
 	}
 	for (--i; i >= 0; i--)
 	{
-		cout << char(hex[i] < 10 ? hex[i] + 48 : hex[i] + 55);
+		cout << hex[i];
+		//cout << char(hex[i] < 10 ? hex[i] + '0' : hex[i] + 'A' - 10);
+		/*cout << char(hex[i] < 10 ? hex[i] + 48 : hex[i] + 55);*/
 		/*if (hex[i] < 10)
 			cout << (int)hex[i];
 		else
