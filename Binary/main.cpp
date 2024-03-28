@@ -37,7 +37,7 @@ void main()
 	}
 	for (--i; i >= 0; i--)
 	{
-		cout << (hex[i] < 10 ? (char)hex[i] + 48 : char(hex[i] + 55));
+		cout << char(hex[i] < 10 ? hex[i] + 48 : (hex[i] + 55));
 	}
 	cout << endl;
 #endif // HEX

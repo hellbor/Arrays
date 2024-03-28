@@ -6,7 +6,7 @@ using std::endl;
 
 
 //#define DEC_2_BIN
-//#define DEC_2_HEX
+#define DEC_2_HEX
 
 void main()
 {
@@ -47,10 +47,11 @@ void main()
 	}
 	for (--i; i >= 0; i--)
 	{
-		if (hex[i] < 10)
+		cout << char(hex[i] < 10 ? hex[i] + 48 : hex[i] + 55);
+		/*if (hex[i] < 10)
 			cout << (int)hex[i];
 		else
-			cout << char(hex[i] + 55);
+			cout << char(hex[i] + 55);*/
 	}
 	cout << endl;
 #endif // DEC_2_HEX
