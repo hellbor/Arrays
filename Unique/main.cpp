@@ -37,6 +37,4 @@ void main()
 		cout << arr[i] << tab;
 	}
 	cout << endl;
-	
-
 }

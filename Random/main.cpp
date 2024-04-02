@@ -13,13 +13,11 @@ void main()
 	int minRand, maxRand;
 	cout << "Введите минимальное случайное число:"; cin >> minRand;
 	cout << "Введите максимальное случайное число:"; cin >> maxRand;
-	//заполнение массива случайными числами:
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = rand() % (maxRand - minRand) + minRand;
 	}
 
-	//вывод массива на экран:
 	for (int i = 0; i < n; i++)
 	{
 		if (minRand < maxRand)cout << arr[i] << tab;
@@ -28,13 +26,10 @@ void main()
 	}
 	while (minRand != maxRand && minRand < maxRand);
 
-	//сортировка массива
-	for (int i = 0; i < n; i++)//выбирает элемент в который нужно поместить
+	for (int i = 0; i < n; i++)
 	{
-		for (int j = i + 1; j < n; j++)//перебирает оставшиеся элементы
+		for (int j = i + 1; j < n; j++)
 		{
-			//arr[i] - выбранный элемент
-			//arr[j] - перебираемый элемент
 			if (arr[j] < arr[i])
 			{
 				int buffer = arr[i];
@@ -43,8 +38,6 @@ void main()
 			}
 		}
 	}
-
-	//вывод отсортированного массива на экран
 	for (int i = 0; i < n; i++)
 	{
 		if (minRand < maxRand)cout << arr[i] << tab;
