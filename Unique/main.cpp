@@ -16,7 +16,7 @@ void main()
 	
 	for (int i = 0; i < n; i++)
 	{
-		for(int i = minRand; i <= maxRand; i++)
+		for(int i = minRand; i<=maxRand; i++)
 		cout << i << tab;
 	}
 	cout << endl;
