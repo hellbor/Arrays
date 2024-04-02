@@ -26,7 +26,7 @@ void main()
 		else if (minRand > maxRand)cout << "ERROR" << endl;
 		else if (minRand == maxRand)cout << "ERROR" << endl;
 	}
-	while (minRand != maxRand && minRand<maxRand);
+	while (minRand != maxRand && minRand < maxRand);
 
 	//сортировка массива
 	for (int i = 0; i < n; i++)//выбирает элемент в который нужно поместить
