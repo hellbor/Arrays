@@ -11,8 +11,17 @@ void main()
 	const int n = 5;
 	int arr[n];
 	int minRand, maxRand;
-	cout << "Введите минимальное случайное число:"; cin >> minRand;
-	cout << "Введите максимальное случайное число:"; cin >> maxRand;
+	do
+	{
+		system("CLS");
+		cout << "Введите минимальное случайное число:"; cin >> minRand;
+		cout << "Введите максимальное случайное число:"; cin >> maxRand;
+		if (minRand >= maxRand)
+		{
+			std::cerr << "Error: введены некорректные значения" << endl;
+			system("PAUSE");
+		}
+	} while (minRand >= maxRand);
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = rand() % (maxRand - minRand) + minRand;
@@ -20,11 +29,9 @@ void main()
 
 	for (int i = 0; i < n; i++)
 	{
-		if (minRand < maxRand)cout << arr[i] << tab;
-		else if (minRand > maxRand)cout << "ERROR" << endl;
-		else if (minRand == maxRand)cout << "ERROR" << endl;
+		cout << arr[i] << tab;
 	}
-	while (minRand != maxRand && minRand < maxRand);
+	cout << endl;
 
 	for (int i = 0; i < n; i++)
 	{
@@ -40,7 +47,7 @@ void main()
 	}
 	for (int i = 0; i < n; i++)
 	{
-		if (minRand < maxRand)cout << arr[i] << tab;
+		cout << arr[i] << tab;
 	}
 	cout << endl;
 }
